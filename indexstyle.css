@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&display=swap');
+
+/*general styling such as font */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    background-color: #111;
+    color: #fff;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*active part of menu along with the toggle.*/
+
+.showcase.active {
+    right: 300px;
+}
+
+.toggle.active {
+    background: url('close.png');
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.text label {
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+textarea {
+    resize: none;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+
+/*This overlay is very important for this site. It allows us to see the video in the background with the mix-blend-mode which makes it pleasing to the eye
+and also makes looking at other elements on the website much easier.*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #a17676;
+    mix-blend-mode: overlay;
+}
+
+
+/*the instruction box used to put in order descriptions*/
+
+.instructionbox {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    margin-top: 30px;
+}
+
+
+/*General text formatting based on the context*/
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 650;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.text a:hover {
+    letter-spacing: 2px;
+}
+
+
+/*Formatting of the right side menu.*/
+
+.menu {
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Formatting on the right side menu text,hyperlinks and a hover effect*/
+
+.menu ul {
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.menu ul li a:hover {
+    color: #5110e9;
+}
+
+
+/*Table formatting for the menu side of the website*/
+
+table,
+tr {
+    margin-left: 40px;
+    z-index: 12;
+    filter: invert(1);
+    text-align: center;
+    color: white;
+}
+
+table button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin: 3px;
+}
+
+table input {
+    width: 50px;
+}

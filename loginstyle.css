@@ -1,0 +1,32 @@
+.intro {
+    text-align: center;
+    justify-content: center;
+}
+
+.username {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.password {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.submitbtn {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.backbutton {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
